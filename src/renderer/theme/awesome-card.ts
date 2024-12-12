@@ -8,7 +8,7 @@ export interface Theme {
 export const themes: Record<string, Theme> = {
   default: {
     quote: '2f80ed',
-    author: '2f80ed',
+    author: 'ffd90f',
     background: 'fffefe',
     symbol: 'ffd90f'
   },
@@ -16,7 +16,7 @@ export const themes: Record<string, Theme> = {
     quote: '9f9f9f',
     author: 'fff',
     background: '151515',
-    symbol: '79ff97'
+    symbol: 'ffd90f'
   },
   'chartreuse-dark': {
     quote: 'fff',
