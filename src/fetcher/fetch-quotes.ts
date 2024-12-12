@@ -36,18 +36,18 @@ const randomQuote = (data: ParseDataParams[]): ParseDataParams => {
 
 export async function fetchQuotes(): Promise<ParseDataReturn> {
   const response = await axios.get(
-    'https://github.com/mudroljub/programming-quotes-api/raw/master/data/quotes.json'
+    'https://github.com/whoops-i-paniced/simpsons-readme-quotes/raw/master/data/quotes.json'
   );
 
-  const data: ParseDataParams[] = response.data;
+  const quotesData: ParseDataParams[] = response.data;
 
   // Validate the fetched data.
-  if (!Array.isArray(data)) {
+  if (!Array.isArray(quotesData)) {
     throw new Error('Fetched data is not an array.');
   }
 
   // Get a random quote.
-  let randQuote = randomQuote(data);
+  let randQuote = randomQuote(quotesData);
 
   // Parse the data and return it.
   return parseData(randQuote);
