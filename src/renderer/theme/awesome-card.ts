@@ -7,10 +7,10 @@ export interface Theme {
 
 export const themes: Record<string, Theme> = {
   default: {
-    quote: '333',
+    quote: '2f80ed',
     author: '2f80ed',
     background: 'fffefe',
-    symbol: '4c71f2'
+    symbol: 'ffd90f'
   },
   defaultDarkModeSupport: {
     quote: '9f9f9f',
